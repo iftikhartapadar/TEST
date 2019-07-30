@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="icon" href="flocabulary-squarelogo-1513621638171.png">
+      <title>Music Video Studio</title>
+    </head>
+       
+    <header>
+      <span><img src="flocablogo.png" width="230px" height="70px;"></span>
+    </header>
+    <body>
+     
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+  <div class="text"></div>
+</label>
+      
+      <div id="container">
+        <video id="getusermedia" autoplay></video>
+        <video id="recorded" autoplay loop></video>
+      </div>
+      
+      <div id ="purplebutton" style="float: right; clear: right; top: 15%">
+  
+        
+        <button onclick="stopRecording()" id="play" style="font-family:'Montserrat', sans-serif;
+        background-color: #8C58FB;" disabled >RESTART</button>
+        
+        
+         <button id="record" style="font-family:'Montserrat', sans-serif;
+        background-color: #8C58FB;">START RECORDING</button>
+        
+        <button id="download" style="font-family:'Montserrat', sans-serif;
+        background-color: #8C58FB;"disabled>DOWNLOAD</button>
+        
+   
+      </div>
+
+       <div id="beats">
+          <p>Beat Selection</p>
+            <select>
+                <option value="epic">Epic</option>
+                <option value="asharp">A Sharp</option>
+                <option value="ballad">Ballad</option>
+                <option value="berry">Berry</option>
+                <option value="billofrights">Bill of Rights</option>
+                <option value="blue">Blue</option>
+            </select>
+        </div>
+          
+          
+      </div>
+       <div id="lyrics">
+            <span><img src="newlyrics.png" width="490px" height="445px;"></span>
+       </div>
+
+    </body>
+    
+    <script src="javascript.js"></script>
+</html>
